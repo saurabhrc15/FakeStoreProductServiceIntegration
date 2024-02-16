@@ -11,9 +11,6 @@ import org.springframework.stereotype.Service;
 public interface ProductService {
     public Product getProductById(Long id) throws NoSuchProductFoundException;
     public List<Product> getProducts(Map<String, String> allParams);
-
     public Product addNewProduct(ProductRequestDto productRequestDto);
-
     public Product updateProduct(Long id, ProductRequestDto productRequestDto);
-
 }
